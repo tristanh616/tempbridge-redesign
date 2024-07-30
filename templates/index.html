@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TempBridge Inc. | Quick ApprovalQuick Response</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
@@ -70,7 +70,7 @@
         <div class="team" >
             <h2>Our team</h2>
         <div class="team-member">
-            <img src="images/EdwardHayes.png" alt="Team Member 1">
+            <img src="{{ url_for('static', filename='images/EdwardHayes.png') }}" alt="Team Member 1">
             <div class="info">
                 <h3>Edward Hayes</h3>
                 <p><strong>Position:</strong> President</p>
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="team-member">
-            <img src="images/RaduMusoiu.png" alt="Team Member 2">
+            <img src="{{ url_for('static', filename='images/images/RaduMusoiu.png') }}" alt="Team Member 2">
             <div class="info">
                 <h3>Radu Musoiu</h3>
                 <p><strong>Position:</strong> Chief Financial Officer</p>
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="team-member">
-            <img src="images/MaydolenHernandez.png" alt="Team Member 2">
+            <img src="{{ url_for('static', filename='images/MaydolenHernandez.png') }}" alt="Team Member 2">
             <div class="info">
                 <h3>Maydolen Hernandez</h3>
                 <p><strong>Position:</strong> Dealer Representative</p>
