@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li.active a {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-section {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 50%;
+}
+
+.text-section h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact-form {
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.contact-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-box h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-box input, .contact-box select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-box button {
+    padding: 10px 20px;
+    background: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-box button:hover {
+    background: #0056b3;
+}
+
+.about {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Team Section Styles */
+.team {
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.team-member {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.team-member .info {
+    flex: 1;
+}
+
+.team-member .info h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.team-member .info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.team-member .info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.team-member .info a:hover {
+    text-decoration: underline;
+}
+
+/* Info Boxes Styles */
+/* Section with Background Image */
+#company {
+    position: relative;
+    padding: 40px 20px;
+    background: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#company .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place the overlay behind the content */
+}
+
+#company .content {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+    color: #fff; /* Ensure text color is readable against overlay */
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for the boxes */
+    border-radius: 8px;
+}
+
+.info-boxes .box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 45%; /* Adjust width as needed */
+    box-sizing: border-box;
+}
+
+.info-boxes .box h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333; /* Adjust text color if needed */
+}
+
+.info-boxes .box p {
+    margin: 10px 0;
+    color: #555; /* Adjust text color for readability */
+}
